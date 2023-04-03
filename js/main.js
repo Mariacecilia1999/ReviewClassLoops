@@ -2,13 +2,11 @@ const $ = selector => document.querySelector(selector)
 const $$ = selector => document.querySelectorAll(selector)
 const create = element => document.createElement(element)
 
-const firstLetter = (values) =>{
-   let letters = ''
-   for(letter of values){
-      letters += letter.charAt(0)
+const numbers = (arrNumbers)=>{
+   let numbers = []
+   for(number of arrNumbers){
+      numbers.push(number *2)
    }
-   return letters
-
+   return numbers
 }
-
-console.log(firstLetter(['Mariana', 'Rosana', 'Federica']))
+console.log(numbers([8,0,10,600]))
