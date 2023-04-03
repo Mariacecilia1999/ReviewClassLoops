@@ -6,7 +6,7 @@ const friends = ['Mariana', 'Rosana', 'Federica']
 
 const showFriends = (array) =>{
    array.forEach(showFriend =>{
-      console.log(showFriend)
+      const container = $('.containerExerciseOne')
    })
 }
 showFriends(friends)
