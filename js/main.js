@@ -18,7 +18,12 @@ const showFriends = (values) =>{
       const span = create('span')
       li.appendChild(span)
       span.classList.add('notFriend')
-   })
+      const img = create('img')
+      span.appendChild(img)
+      img.classList.add('imgSadFace')
+      img.setAttribute('src', './img/sadFace.png')
+      img.style.width = '17px'
+   }) 
 }
 
 showFriends(['Mariana', 'Rosana', 'Federica'])
