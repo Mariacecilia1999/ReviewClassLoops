@@ -28,7 +28,7 @@ const showFriends = (values) =>{
       classImage.forEach(img =>{
          img.addEventListener('click', function(){
 
-            //First parentElement span, second parentElement li
+            //span is the parent element of img , li is the parent element of span.
             console.log(img.parentElement.parentElement)
             img.parentElement.parentElement.remove()
          })
