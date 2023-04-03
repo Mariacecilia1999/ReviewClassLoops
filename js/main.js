@@ -2,11 +2,16 @@ const $ = selector => document.querySelector(selector)
 const $$ = selector => document.querySelectorAll(selector)
 const create = element => document.createElement(element)
 
-const numbers = (arrNumbers)=>{
-   let numbers = []
-   for(number of arrNumbers){
-      numbers.push(number *2)
+const scores = (value) =>{
+   let accumulator = 0
+   for(const score of value){
+      accumulator += score
+      if(accumulator > 200){
+         accumulator += 50
+         console.log(`Accumulator adds 50 points: ${accumulator}`)
+      }
    }
-   return numbers
+   console.log(accumulator)
 }
-console.log(numbers([8,0,10,600]))
+scores([0,50])
+scores([200, 50])
