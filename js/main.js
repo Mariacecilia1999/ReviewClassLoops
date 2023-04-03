@@ -4,5 +4,8 @@ const $ = selector => document.querySelector(selector)
 
 //If I press the face, the friend is removed from the friend from the friends list
 
+const showFriends = (values) =>{
+   
+}
 
-const friends = ['Mariana', 'Rosana', 'Federica']
+showFriends(['Mariana', 'Rosana', 'Federica'])
