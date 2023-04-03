@@ -15,6 +15,9 @@ const showFriends = (values) =>{
       const li = create('li')
       li.innerText += value
       ul.appendChild(li)
+      const span = create('span')
+      li.appendChild(span)
+      span.classList.add('notFriend')
    })
 }
 
