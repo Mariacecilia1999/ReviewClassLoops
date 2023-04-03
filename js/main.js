@@ -1,21 +1,8 @@
 const $ = selector => document.querySelector(selector)
 
-//Exercise one: Traverse array of friends
+//Exercise one PLUS: Traverse array of friends , add a sad face for each <li>
+
+//If I press the face, the friend is removed from the friend from the friends list
+
 
 const friends = ['Mariana', 'Rosana', 'Federica']
-
-const showFriends = (array) =>{
-   const createUl = document.createElement('ul')
-   array.forEach(showFriend =>{
-      const container = $('.containerExerciseOne')
-      const li = document.createElement('li')
-      li.innerText += showFriend
-
-
-
-      container.appendChild(createUl)
-      createUl.appendChild(li)
-      console.log(container)
-   })
-}
-showFriends(friends)
