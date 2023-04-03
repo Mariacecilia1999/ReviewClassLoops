@@ -10,9 +10,12 @@ const showFriends = (values) =>{
    const containerExercisePlus = $('.containerExerciseOnePlus')
    console.log(containerExercisePlus)
    const ul = create('ul')
-   const li = create('li')
    containerExercisePlus.appendChild(ul)
-   ul.appendChild(li)
+   values.forEach(value =>{
+      const li = create('li')
+      li.innerText += value
+      ul.appendChild(li)
+   })
 }
 
 showFriends(['Mariana', 'Rosana', 'Federica'])
